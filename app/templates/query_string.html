@@ -1,0 +1,9 @@
+{% extends './layout.html' %} {% block title %}query_string{% endblock %} {%
+block body %}
+<h1>
+  Buena {{data.arg1}}...esto es un query string en flask ya sabes mostrar datos
+  y tu edad es <span>{{data.arg2}}</span>
+</h1>
+
+<h2>{{ data.arg1 }}</h2>
+{% endblock %}
