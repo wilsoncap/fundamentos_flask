@@ -74,10 +74,11 @@ def listar_cursos():
   except Exception as ex:
     data['mensaje'] ='Error...'
   return jsonify(data)
+  #return render_template('allcursos.html', data=data)
 
 
-@app.route('/mostrarcursos')
-def show_cursos():
+#@app.route('/mostrarcursos')
+#def show_cursos():
   #cursos = get('http//127.0.0.1:5000/cursos').json()
 
 
@@ -102,6 +103,7 @@ if __name__=='__main__':
 # pip install -r requirements.txt --> para instalar los paquetes en otro proyecto
 # python .\app\app.py --> se ejecuta en el entorno virtual
 # python.exe pip install --upgrade pip
+# python .\app\app.py --> para levantar el servidor
 # python .\src\app.py
 # pip list --outdated --> para ver los paquetes que estan desactualizados
 # pip show "nombre del paquete" --> para ver toda la informacion mas detallada del paquete
